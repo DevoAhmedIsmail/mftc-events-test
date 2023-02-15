@@ -1,0 +1,41 @@
+/* Navbar */
+.top_bar .img_wrap {
+    width: 30px;
+    height: 30px;
+}
+
+.top_bar .img_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav,
+nav ul
+ {
+    z-index: 999;
+}
+
+nav ul .nav_item .nav_item_dropdown {
+    background: #fff;
+    z-index: 999;
+}
+
+nav ul .nav_item .nav_item_dropdown li {
+    z-index: 999;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+/* End Navbar */
+
+/* Events_Page (home_page) */
+.events_item:hover .overlay {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+/* End Events_Page (home_page) */

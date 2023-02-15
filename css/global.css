@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #FF6D34;
+    --secondColor: #00bda6;
+    --darkColor: #282834;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: var(--mainColor);
+}
+  
+::selection {
+    color: #fff;
+    background: var(--mainColor);
+}
+
+.text-main {
+    color: var(--mainColor);
+}
+
+.text-second {
+    color: var(--secondColor);
+}
+
+.text-hover:hover {
+    color: var(--mainColor);
+}
+
+.bg-main {
+    background-color: var(--mainColor);
+}
+
+.bg-second {
+    background-color: var(--secondColor);
+}
+
+.section_title {
+    text-align: center;
+}
+
+.section_title p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--secondColor);
+}
+
+.section_title p::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--secondColor);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Background */
+.bg-categories {
+    background-image: url(../img/background-shapes/squares.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.bg-header-contact {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/contactus.jpg) center center no-repeat !important;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #181b24b0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 500ms;
+}

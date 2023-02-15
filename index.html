@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/css-circular-prog-bar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap & Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>MFTC Events</title>
+</head>
+
+<body>
+    <div class="home_page ">
+        <!-- Topbar -->
+        <div class="hidden lg:block top_bar bg-dark py-1">
+            <div class=" container mx-auto">
+                <div class="d-flex items-center justify-between text-white">
+                    <div class="d-flex gap-2 items-center">
+                        <a href="tel:0126529126" class="text-hover"><i class="fa-solid fa-phone ml-2"></i><span>0126529126</span></a >
+                        <a href="mailto:info@fin.com.sa" class="text-hover"><i class="fa-solid fa-envelope-open ml-2"></i><span>info@fin.com.sa</span></a>
+                        
+                    </div>
+                    <div class="d-flex items-center gap-4">
+                        <p class="cursor-pointer text-hover"><i
+                                class="fa-solid fa-magnifying-glass ml-2"></i><span>ابحث الان</span></p>
+                        <div class="d-flex gap-3">
+                            <i class="fa-brands fa-twitter cursor-pointer text-hover"></i>
+                            <i class="fa-brands fa-facebook-f cursor-pointer text-hover"></i>
+                            <i class="fa-brands fa-linkedin-in cursor-pointer text-hover"></i>
+                            <i class="fa-brands fa-instagram cursor-pointer text-hover"></i>
+                        </div>
+                        <div>
+                            <!-- <a href="index.html" class="d-flex items-center cursor-pointer text-hover">
+                                <p class="ms-2">En</p>
+                                <div class="img_wrap">
+                                    <img src="img/usflag.webp"
+                                        alt="en">
+                                </div>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+
+
+        <!-- Navbar -->
+        <nav
+            class=" flex flex-wrap justify-between md:justify-between items-center shadow  w-full px-0 md:px-4 text-lg text-gray-700 bg-white">
+
+            <div class="px-4">
+                <a href="index-ar.html">
+                    <img src="img/logo.png" alt="logo" class="w-32 h-16 object-contain	">
+                </a>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="mx-4 h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full px-4 pb-2 md:pb-0 md:px-0 md:flex md:items-center md:w-auto bg-blue-800 md:bg-white fw-bolder" id="menu">
+                <ul class="text-base text-gray-700 md:flex md:justify-between  md:pt-0">
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block text-hover" href="index-ar.html">الرئيسية</a>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block text-hover" href="index-ar.html">عن الفاعليات</a>
+                    </li>
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 py-2 block text-hover" href="index-ar.html">للتواصل</a>
+                    </li>
+                   
+                    <li class="relative group nav_item text-slate-50 md:text-black">
+                        <a class="md:p-4 px-4 py-2 mr-0 d-inline-block text-hover bg-second text-white rounded-lg " href="signin.html">التسجيل</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Carousel --> 
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="15000">
+                    <img class="w-100" src="img/photos/01.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 900px;">
+                            <p class="text-white text-uppercase mb-5 animated slideInDown fw-bold text-3xl">الملتقى المهني العاشر</p>
+                            <p class=" text-white md:mb-1 animated zoomIn text-lg">الرجال: 12-14 ربيع الثاني 1444 الموافق 06-08 نوفمبر 2022</p>
+                            <p class=" text-white md:mb-1 animated zoomIn text-lg">السيدات: 15-16 ربيع الثاني 1444 الموافق 09-10 نوفمبر 2022</p>
+                            <p class="fw-bold mb-2">من 9ص إلى 5م</p>
+                            <a href="#"
+                                class="btn bg-main text-white py-md-3 px-md-5 me-3 animated slideInLeft rounded  mt-6 md:mt-5">التسجيل</a>
+                            <a href="#"
+                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight mt-6 md:mt-5">دليل الزوار</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                    <img class="w-100" src="img/photos/04.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 900px;">
+                            <p class="text-white text-uppercase mb-5 animated slideInDown fw-bold text-3xl">الملتقى المهني العاشر</p>
+                            <p class=" text-white md:mb-1 animated zoomIn text-lg">الرجال: 12-14 ربيع الثاني 1444 الموافق 06-08 نوفمبر 2022</p>
+                            <p class=" text-white md:mb-1 animated zoomIn text-lg">السيدات: 15-16 ربيع الثاني 1444 الموافق 09-10 نوفمبر 2022</p>
+                            <p class="fw-bold mb-2">من 9ص إلى 5م</p>
+                            <a href="#"
+                                class="btn bg-main text-white py-md-3 px-md-5 me-3 animated slideInLeft rounded  mt-6 md:mt-5">التسجيل</a>
+                            <a href="#"
+                                class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight mt-6 md:mt-5">دليل الزوار</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End Carousel -->
+
+        <div class="fixed flex items-center gap-3 left-3" style="top: 120px; z-index: 10000;">
+            <label class="text-red-500 fw-bold">Main Color</label>
+            <input type="color" id="mainColorPicker" value="#FF6D34">
+            <label class="text-red-500 fw-bold">Second Color</label>
+            <input type="color" id="secondColorPicker" value="#00bda6">
+        </div>
+
+        <!-- Events_page -->
+            <main class="events-page">
+                <div class="container mx-auto">
+                    <!-- incoming_Events -->
+                        <section class="py-5">
+                            <div class="">
+                                <p class="text-center fw-bold text-3xl text-second">الفاعليات القادمة</p>
+                            </div>
+                            <div class="mt-5">
+                                <div class="row gap-y-5">
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event01.jpg" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">المجوهرات والأحجار الكريمة والتكنولوجيا دبي</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event02.jpg" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">ماجيك لاس فيغاس</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event03.png" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">WWETT Show</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event04.png" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">Coterie New York</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event05.jpg" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">MRO Latin America</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event06.png" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">AMWC North America</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event07.jpg" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">Intermodal South America</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                        <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                            <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                                <div class="w-64 h-32">
+                                                    <img src="img/events/event08.png" alt="event" class="w-full h-full object-contain">
+                                                </div>
+                                                <div class="event_body mt-3">
+                                                    <p class="fw-bold text-center">NT Expo</p>
+                                                </div>
+                                                <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    <!-- End incoming_Events -->
+                        <hr>
+                    <!-- Previous_Events -->
+                    <section class="py-5">
+                        <div class="">
+                            <p class="text-center fw-bold text-3xl text-second">الفاعليات السابقة</p>
+                        </div>
+                        <div class="mt-5">
+                            <div class="row gap-y-5">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover ">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event09.jpg" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">MRO Middle East</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event10.png" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">Malaysian International Furniture Fair</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event11.png" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">Architecture Technology Exhibition</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event12.jpg" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">Windoor Façade Expo</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event13.jpg" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">Middle East Energy</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event14.jpg" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">International Roofing Expo</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event15.jpg" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">Natural Products Expo West</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                    <div class="events_item border shadow rounded-lg p-3 relative" style="min-height: 226px;">
+                                        <a href="#" class="flex flex-col justify-between items-center text-hover">
+                                            <div class="w-64 h-32">
+                                                <img src="img/events/event16.jpg" alt="event" class="w-full h-full object-contain">
+                                            </div>
+                                            <div class="event_body mt-3">
+                                                <p class="fw-bold text-center">France Licensing Day</p>
+                                            </div>
+                                            <div class="overlay">
+                                                    <p class="fw-bold mb-2">12-14 February, 2023</p>
+                                                    <p class="fw-bold text-lg"> <i class="fa-regular fa-eye"></i> مشاهدة الفاعلية</p>
+                                                </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <!-- End Previous_Events -->
+                </div>
+            </main>
+        <!-- End Events_page -->
+
+        <footer class="pt-5 pb-1 bg-dark text-white">
+            <div class="container mx-auto">
+                <div class="row pb-16">
+                    <div class=" col-md-4 col-sm-6 col-12">
+                        <a href="/">
+                            <div class="img_wrapper">
+                                <img src="img/logo.png" alt="logo">
+                            </div>
+                        </a>
+                        <p class="text-gray-300 mt-3 text-sm">معتمد من المؤسسة العامة العامة للتدريب المهني والمركز الوطني للتعليم الالكتروني</p>
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-12 px-6 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">تواصل معنا</p>
+                        <div class="d-flex flex-column align-items-start justify-content-center mt-3">
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-second ms-2"></i>
+                                <p class="mb-0">0126529126+</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-second ms-2"></i>
+                                <p class="mb-0">123 شارع, الرياض, جدة</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-second ms-2"></i>
+                                <p class="mb-0">info@fin.com.sa</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-whatsapp text-second ms-2"></i>
+                                <p class="mb-0">00966535530307</p>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class=" col-md-4 col-sm-6 col-12 mt-3">
+                        <p class="border-b-2 border-gray-200 fw-bold text-2xl pb-3">النشرة البريدية</p>
+                        <form class="mt-3">
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="ادخل الاسم">
+                            </div>
+                            <div>
+                                <input type="text" class="form-control mt-2" placeholder="ادخل الايميل">
+                            </div>
+                            <button
+                                class="bg-main text-white text-center form-control mt-2 border-none outline-none"><i
+                                    class="fa-solid fa-paper-plane"></i>اشترك</button>
+                        </form>
+                    </div>
+                </div>
+                <div
+                    class="footer_bottom flex flex-col justify-center items-center border-t-2 border-gray-500 pt-3">
+                    <div>
+                        <p>جميع الحقوق محفوظة &copy; 2023</p>
+                    </div>
+                    <div class="flex gap-3 mt-6 md:mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f text-3xl text-hover"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter text-3xl text-hover"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-3xl text-hover"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in text-3xl text-hover"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- End Home_page -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $("nav").load("parts/navbar.html");
+            $("footer").load("parts/footer.html");
+        });
+    </script> -->
+
+    <!-- Javascripts -->
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <!-- Fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Local js -->
+    <script src="./js/carousel.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
